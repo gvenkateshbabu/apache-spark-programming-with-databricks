@@ -101,7 +101,7 @@ def delete_path(path):
 
     if deleted == False:
       if file.is_dir:
-        deletePath(file.path)
+        delete_path(file.path)
       else:
         raise IOError("Unable to delete file: " + file.path)
 
